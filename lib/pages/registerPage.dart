@@ -42,7 +42,7 @@ class _RegisterPageState extends State<RegisterPage> {
               hintText: 'Confirm Password',
               obscureText: true),
           const SizedBox(height: 15),
-          CustomButton(text: 'Register', onPressed: () {}),
+          CustomButton(text: 'Register', onPressed: () { print('${loginController.text} ${passwordController.text} ${passwordConfirmController.text}'); }),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
